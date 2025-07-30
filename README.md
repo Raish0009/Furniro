@@ -2,7 +2,7 @@
 
 A modern and elegant furniture eCommerce landing page built using HTML and CSS. This is a static frontend project for showcasing beautiful room designs, furniture collections, and a clean UI shopping experience.
 
-![Furniro Screenshot](./assets/Images/Home.jpg)
+![Furniro Screenshot](./assets/Images/Home.webp)
 
 ---
 
