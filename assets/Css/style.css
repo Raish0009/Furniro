@@ -104,6 +104,52 @@ body {
   border-radius: 4px;
 }
 
+.browse-range {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--white);
+}
+
+.browse-text h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.browse-text p {
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.browse-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.browse-card {
+  max-width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.browse-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.browse-card h3 {
+  margin-top: 0.8rem;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
 .footer {
   background-color: var(--white);
   padding: 3rem;
