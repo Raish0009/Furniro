@@ -6,7 +6,7 @@
   --white: #fff;
   --gray: #666;
   --light-gray: #ddd;
-  --font-main: 'Segoe UI', sans-serif;
+  --font-main: 'Poppins', sans-serif;
 }
 
 * {
@@ -23,6 +23,7 @@ body {
 }
 
 
+
 .nav {
   max-width: 1286px;
   background: white;
@@ -37,7 +38,6 @@ body {
   margin: 0 2rem;
   text-decoration: none;
   color: var(--text-color);
-  font-weight: bold;
 }
 
 .icons span {
@@ -48,6 +48,11 @@ body {
 
 .icons span img {
   width: 1.5rem;
+}
+
+.fa-bars{
+  font-size: 25px;
+  display: none;
 }
 
 .hero {
@@ -150,6 +155,124 @@ body {
   font-weight: 600;
 }
 
+.our-products {
+  padding: 4rem 2rem;
+  /* background-color: var(--bg-color); */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  background: var(--white);
+  border-radius: 10px;
+  max-width: 250px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.product-img {
+  position: relative;
+  /* height: 200px; */
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discount,
+.new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: crimson;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 50px;
+}
+
+.new-badge {
+  background: #2EC1AC;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.desc {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.price {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-left: 0.5rem;
+}
+
+.hover-card .product-img {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-cart-btn {
+  background-color: var(--white);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.actions span {
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+}
+
+.show-more {
+  margin-top: 2rem;
+  padding: 0.7rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
 .footer {
   background-color: var(--white);
   padding: 3rem;
@@ -232,4 +355,18 @@ footer p {
   text-align: left;
   margin-top: 1rem;
   font-size: 0.85rem;
+}
+
+@media screen and (max-width:992px) {
+  .menu,.icons{
+    display: none;
+  }
+  .fa-bars{
+    display: block;
+  }
+}
+@media screen and (max-width:567px) {
+  .footer-section{
+    text-align: center;
+  }
 }
