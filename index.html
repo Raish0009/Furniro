@@ -33,6 +33,12 @@
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/Css/style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -93,6 +99,8 @@
     <h2 class="section-title">Our Products</h2>
     <div class="products-grid">
 
+
+
       <!-- Product Card -->
       <div class="product-card">
         <div class="product-img">
@@ -113,20 +121,6 @@
         <p class="price">Rp 2.500.000 <span class="old-price">Rp 3.500.000</span></p>
       </div>
 
-      <!-- <div class="product-card hover-card">
-        <div class="product-img dark-bg">
-          <button class="add-cart-btn">Add to cart</button>
-          <div class="actions">
-            <span>🔗 Share</span>
-            <span>⚖️ Compare</span>
-            <span>❤️ Like</span>
-          </div>
-        </div>
-        <h3>Leviosa</h3>
-        <p class="desc">Stylish cafe chair</p>
-        <p class="price">Rp 2.500.000</p>
-      </div> -->
-
       <div class="product-card">
         <div class="product-img">
           <img src="./assets/Images/Lolito.webp" alt="Lolito">
@@ -136,6 +130,7 @@
         <p class="desc">Luxury big sofa</p>
         <p class="price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></p>
       </div>
+
       <div class="product-card">
         <div class="product-img">
           <img src="./assets/Images/Respira.webp" alt="Lolito">
@@ -179,12 +174,64 @@
         </div>
         <h3>Lolito</h3>
         <p class="desc">Luxury big sofa</p>
-        <p class="price">Rp 7.000.000 <span class="old-price">Rp 14.000.000</span></p>
+        <p class="price">Rp 7.000.000 <span c lass="old-price">Rp 14.000.000</span></p>
       </div>
 
     </div>
     <button class="show-more">Show More</button>
   </section>
+
+  <section class="inspirations">
+  <div class="inspirations-text">
+    <h2>50+ Beautiful rooms inspiration</h2>
+    <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
+    <button>Explore More</button>
+  </div>
+
+  <div class="swiper inspirations-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="./assets/Images/Room1.webp" alt="Room 1" />
+        <div class="slide-caption">
+          <span>01 — Bed Room</span>
+          <h3>Inner Peace</h3>
+          <button><i class="fa fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="./assets/Images/Room2.webp" alt="Room 2" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img src="./assets/Images/Room3.webp" alt="Room 3" />
+      </div>
+      <!-- Add more slides if needed -->
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<section class="share-section">
+  <h2>Share your setup with <br> <span>#FuniroFurniture</span></h2>
+  <div class="share-gallery">
+    <img src="./assets/Images/Share1.webp" alt="setup1">
+    <img src="./assets/Images/Share2.webp" alt="setup2">
+    <img src="./assets/Images/Share3.webp" alt="setup3">
+    <img src="./assets/Images/Share4.webp" alt="setup4">
+    <img src="./assets/Images/Share5.webp" alt="setup5">
+    <img src="./assets/Images/Share6.webp" alt="setup6">
+    <img src="./assets/Images/Share7.webp" alt="setup7">
+    <img src="./assets/Images/Share8.webp" alt="setup8">
+  </div>
+</section>
 
 
 
@@ -219,6 +266,7 @@
     <p class="copyright">2023 funiro. All rights revered</p>
   </footer>
 
+  <script src="./assets/Js/Script.js"></script>
 
 </body>
 
